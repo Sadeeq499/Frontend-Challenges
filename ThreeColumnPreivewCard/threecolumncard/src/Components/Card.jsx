@@ -80,13 +80,13 @@ const Data = [
 
 function Card() {
   return (
-    <div className="bg-slate-100 mt-5 shadow-lg shadow-indigo-400 mx-auto w-[80%] h-[80vh] flex justify-center">
+    <div className="bg-slate-100 mt-5 shadow-lg shadow-indigo-400 mx-auto w-[80%] h-[80vh] flex justify-center xl:w-[80%] xl:h-[60vh]">
       {/* create three cards */}
       {Data.map((item, index) => {
         return (
           <div
             key={index}
-            className={`${item.bgColor} w-[27%] h-[65vh] mt-5 -ms-1 rounded`}
+            className={`${item.bgColor} w-[27%] h-[65vh] mt-5 -ms-1 rounded lg:h-[50vh] lg:w-[27%]`}
           >
             <div className="m-5">
               <img src={item.img} className="w-16 pt-4" alt={item.title} />
